@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="lib/bootstrap.min.css">
+    <style>
+        .navbar-nav .nav-link.active {
+            color: #fff;
+        }
+
+        .nav-link {
+            text-align: center;
+        }
+
+        section {
+            height: auto;
+            padding: 70px 0; 
+            margin-bottom: 30px;
+        }
+
+        .container {
+            padding-top: 0; 
+        }
+
+        header {
+            position: sticky;
+            top: 0;
+            left: 0;
+            background-color: #0D6EFD;
+            z-index: 1000;
+        }
+
+        .card {
+            margin-bottom: 20px;
+        }
+
+        .card img {
+            height: 200px;
+            object-fit: cover;
+        }
+
+        #beginning {
+            background-color: #f8f9fa;
+        }
+
+        #travel-packages {
+            background-color: #e9ecef;
+        }
+
+        #contact {
+            background-color: #f8f9fa;
+        }
+
+        .card-img-overlay {
+            width: 100%;
+            height: 10px;
+            object-fit: cover;
+            padding: 10px;
+        }
+
+        .carousel-item img {
+            width: 100%; 
+            height: 500px; 
+            object-fit: cover; 
+        }
+
+    </style>
+</head>
+<body>
+    <header id="cabecalho">
+        <div class="navbar navbar-expand-lg">
+            <div class="container">
+                <h1>Sea & Destinations</h1>
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <nav class="collapse navbar-collapse justify-content-end" id="menu">
+                    <ul class="nav navbar-nav nav-pills">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#travel-packages">Travel Packages</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+                <button id="btn-checar-emails" class="btn btn-warning" type="button">Check Inbox</button>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+    <div data-bs-spy="scroll" data-bs-target="#cabecalho">
+        <section id="beginning">
+            <div">
+                <div id="carousel-exemplo" class="carousel carousel-fade slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div data-bs-interval="3000" class="carousel-item active">
+                            <img class="d-block w-100" src="./images/cruise-ship-1218305_1280.jpg" />
+                            <div class="carousel-caption">
+                            </div>
+                        </div>
+                        <div data-bs-interval="3000" class="carousel-item">
+                            <img class="d-block w-100" src="./images/cruise-ship-778533.jpg" />
+                            <div class="carousel-caption">
+                            </div>
+                        </div>
+                        <div data-bs-interval="3000" class="carousel-item">
+                            <img class="d-block w-100" src="./images/ship-7140939_1280.jpg" />
+                            <div class="carousel-caption">
+                            </div>
+                        </div>
+                    </div>
+                    <button data-bs-target="#carousel-exemplo" data-bs-slide="prev" class="carousel-control-prev" type="button">
+                        <span class="carousel-control-prev-icon"></span>
+                    </button>
+                    <button data-bs-target="#carousel-exemplo" data-bs-slide="next" class="carousel-control-next">
+                        <span class="carousel-control-next-icon"></span>
+                    </button>
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carousel-exemplo" class="active" data-bs-slide-to="0"></button>
+                        <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="1"></button>
+                        <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="2"></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+        <section id="travel-packages">
+            <div class="container">
+                <h2>Travel Packages</h2>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-6 col-sm-12">
+                            <div class="card text-bg-dark">
+                                <img src="./images/carribean.jpg" />
+                                <div class="card-img-overlay">
+                                    <h4 class="card-title">Caribbean</h4>
+                                    <h5 class="card-subtitle">51 ports</h5>
+                                    <a href="#" class="btn btn-primary">Link Button</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12">
+                            <div class="card text-bg-dark">
+                                <img src="./images/istockphoto-2056307901-1024x1024.jpg" />
+                                <div class="card-img-overlay">
+                                    <h4 class="card-title">Mediterranean</h4>
+                                    <h5 class="card-subtitle">123 ports</h5>
+                                    <a href="#" class="btn btn-primary">Link Button</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12">
+                            <div class="card text-bg-dark">
+                                <img src="./images/sea-4296705_640.jpg" />
+                                <div class="card-img-overlay">
+                                    <h4 class="card-title">Asian Pacific</h4>
+                                    <h5 class="card-subtitle">28 ports</h5>
+                                    <a href="#" class="btn btn-primary">Link Button</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12">
+                            <div class="card text-bg-dark">
+                                <img src="./images/sea-3681434_640.jpg" />
+                                <div class="card-img-overlay">
+                                    <h4 class="card-title">Northern Europe</h4>
+                                    <h5 class="card-subtitle">61 ports</h5>
+                                    <a href="#" class="btn btn-primary">Link Button</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12">
+                            <div class="card text-bg-dark">
+                                <img src="./images/rio-4348017_640.jpg" />
+                                <div class="card-img-overlay">
+                                    <h4 class="card-title">South America</h4>
+                                    <h5 class="card-subtitle">25 ports</h5>
+                                    <a href="#" class="btn btn-primary">Link Button</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12">
+                            <div class="card text-bg-dark">
+                                <img src="./images/madagascar-4601287_640.jpg" />
+                                <div class="card-img-overlay">
+                                    <h4 class="card-title">Africa</h4>
+                                    <h5 class="card-subtitle">10 ports</h5>
+                                    <a href="#" class="btn btn-primary">Link Button</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="contact">
+            <div class="container">
+                <h2>Contact</h2>
+                <form>
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Name</label>
+                        <input type="text" class="form-control" id="name" placeholder="Your Name">
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="email" placeholder="Your Email">
+                    </div>
+                    <div class="mb-3">
+                        <label for="message" class="form-label">Message</label>
+                        <textarea class="form-control" id="message" rows="4" placeholder="Your Message"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+        </section>
+    </div>
+
+    <div class="toast-container position-fixed bottom-0 end-0 p-3">
+        <div class="toast" id="mensagens-alerta">
+            <header class="toast-header">
+                <strong>Important</strong>
+            </header>
+            <div class="toast-body">
+                You have 10 unread messages
+                <div class="mt-2 pt-2 border-top">
+                    <button data-bs-dismiss="toast" class="btn btn-danger" type="button">
+                        Discard
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="lib/bootstrap.bundle.min.js"></script>
+    <script>
+        const ativadorToast = document.getElementById('btn-checar-emails');
+        const mensagem = document.getElementById('mensagens-alerta')
+
+        if (ativadorToast) {
+            ativadorToast.addEventListener('click', function() {
+                const toast = new bootstrap.Toast(mensagem);
+                toast.show();
+            })
+        } 
+    </script>
+</body>
+</html>
